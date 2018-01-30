@@ -15,7 +15,7 @@ npm install
 For me specifically I like the run the servers in the same terminal in the background. YMMV
 
 ```
-mongod --dbpath /user/USERNAME/PATH TO PROJECT/data/ &
+mongod --dbpath /home/USERNAME/PATH TO PROJECT/data/ &
 npm start &
 ```
 
