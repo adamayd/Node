@@ -1,6 +1,4 @@
-let sumNums = 0;
-
-for (let i = 2; i < process.argv.length; i++) {
-  sumNums += Number(process.argv[i]);
-}
-console.log(sumNums);
+const sumNum = process.argv
+                      .filter(arg => (parseInt(arg) == arg))
+                      .reduce((acc, cur) => (acc += parseInt(cur)),0)
+console.log(sumNum)
